@@ -1,0 +1,1386 @@
+[0m23:45:28.624952 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E6F251D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E6F252550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E6F253490>]}
+
+
+============================== 23:45:28.624952 | d5ebc9f4-e96d-44c3-b51e-01d8d98c5799 ==============================
+[0m23:45:28.624952 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:45:28.624952 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt seed', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:45:28.633410 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Could not find profile named 'healthcare'
+[0m23:45:28.633410 [debug] [MainThread]: Command `dbt seed` failed at 23:45:28.633410 after 0.08 seconds
+[0m23:45:28.633410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E6F25C390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E6F25DBD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022E6E224E50>]}
+[0m23:45:28.633410 [debug] [MainThread]: Flushing usage events
+[0m23:45:30.537897 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:49:41.860185 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD3E36C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD3E2E090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD4E63210>]}
+
+
+============================== 23:49:41.863172 | 5fe77bba-98c0-4dfa-92bc-1ab49ce67a9c ==============================
+[0m23:49:41.863172 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:49:41.864157 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt seed', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:49:42.237146 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5fe77bba-98c0-4dfa-92bc-1ab49ce67a9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA800F1550>]}
+[0m23:49:42.276839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '5fe77bba-98c0-4dfa-92bc-1ab49ce67a9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD058D810>]}
+[0m23:49:42.286831 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:49:42.604072 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m23:49:42.604072 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:49:42.604072 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '5fe77bba-98c0-4dfa-92bc-1ab49ce67a9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DA800F03D0>]}
+[0m23:49:44.584303 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare_dbt.int_final' (models\intermediate\int_final.sql) depends on a node named 'sample' which was not found
+[0m23:49:44.584303 [debug] [MainThread]: Command `dbt seed` failed at 23:49:44.584303 after 2.79 seconds
+[0m23:49:44.584303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD3E37ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD3E37FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DAD3E34D50>]}
+[0m23:49:44.584303 [debug] [MainThread]: Flushing usage events
+[0m23:49:46.244420 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:51:41.974438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA59B6710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA69B0C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA69B1610>]}
+
+
+============================== 23:51:41.974438 | f2f4d6f8-9d9c-4649-b6a6-dd2bb855f212 ==============================
+[0m23:51:41.974438 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:51:41.974438 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt clean', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:51:42.071839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f2f4d6f8-9d9c-4649-b6a6-dd2bb855f212', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA6B45150>]}
+[0m23:51:42.102143 [debug] [MainThread]: Command `dbt clean` succeeded at 23:51:42.102143 after 0.17 seconds
+[0m23:51:42.103189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA59ADB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA5754090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024DA5754590>]}
+[0m23:51:42.103189 [debug] [MainThread]: Flushing usage events
+[0m23:51:43.595747 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:51:56.001892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A4F426710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A50424290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A4F41E850>]}
+
+
+============================== 23:51:56.001892 | 0a421ff5-b19b-4ee0-a358-3a433b2d813e ==============================
+[0m23:51:56.001892 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:51:56.001892 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt seed', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:51:56.155931 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0a421ff5-b19b-4ee0-a358-3a433b2d813e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A001673D0>]}
+[0m23:51:56.190814 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0a421ff5-b19b-4ee0-a358-3a433b2d813e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A4E40ECD0>]}
+[0m23:51:56.203334 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:51:56.341619 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m23:51:56.341619 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:51:56.341619 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '0a421ff5-b19b-4ee0-a358-3a433b2d813e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A50456450>]}
+[0m23:51:56.941809 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare_dbt.int_final' (models\intermediate\int_final.sql) depends on a node named 'sample' which was not found
+[0m23:51:56.941809 [debug] [MainThread]: Command `dbt seed` failed at 23:51:56.941809 after 1.00 seconds
+[0m23:51:56.957526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A5045E050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A0000BE10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024A004AFF50>]}
+[0m23:51:56.957526 [debug] [MainThread]: Flushing usage events
+[0m23:51:58.540472 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:52:18.960608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FBEC6490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FCEC4A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FCEF26D0>]}
+
+
+============================== 23:52:18.964188 | 78b0bf4b-bc0b-451e-b89e-7854aa584f9c ==============================
+[0m23:52:18.964188 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:52:18.965156 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt ls', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:52:19.112550 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '78b0bf4b-bc0b-451e-b89e-7854aa584f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FCF5E0D0>]}
+[0m23:52:19.153594 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '78b0bf4b-bc0b-451e-b89e-7854aa584f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FAEAF610>]}
+[0m23:52:19.153594 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:52:19.291828 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m23:52:19.291828 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:52:19.291828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '78b0bf4b-bc0b-451e-b89e-7854aa584f9c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210FBEBDFD0>]}
+[0m23:52:19.938537 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare_dbt.int_final' (models\intermediate\int_final.sql) depends on a node named 'sample' which was not found
+[0m23:52:19.939723 [debug] [MainThread]: Command `dbt ls` failed at 23:52:19.939723 after 1.03 seconds
+[0m23:52:19.940769 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210F538EB50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210F538DE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021080612D90>]}
+[0m23:52:19.940769 [debug] [MainThread]: Flushing usage events
+[0m23:52:21.382168 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:54:15.278411 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028736A06D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028737A05290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028736A067D0>]}
+
+
+============================== 23:54:15.290446 | 34731c39-393b-4f45-9002-cdfbb24085f9 ==============================
+[0m23:54:15.290446 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:54:15.290446 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt build', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:54:15.446993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '34731c39-393b-4f45-9002-cdfbb24085f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028737A059D0>]}
+[0m23:54:15.479241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '34731c39-393b-4f45-9002-cdfbb24085f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002873314C490>]}
+[0m23:54:15.495359 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:54:15.631811 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m23:54:15.631811 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:54:15.631811 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '34731c39-393b-4f45-9002-cdfbb24085f9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000028737A90050>]}
+[0m23:54:16.262179 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare_dbt.int_final' (models\intermediate\int_final.sql) depends on a node named 'sample' which was not found
+[0m23:54:16.262179 [debug] [MainThread]: Command `dbt build` failed at 23:54:16.262179 after 1.03 seconds
+[0m23:54:16.262179 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287369FDB90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000287369FDE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002870000C250>]}
+[0m23:54:16.262179 [debug] [MainThread]: Flushing usage events
+[0m23:54:17.711865 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:55:46.918738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4BB662750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4BC6963D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4BC697890>]}
+
+
+============================== 23:55:46.922056 | 14266b74-5242-4cb2-92df-5d34226281c4 ==============================
+[0m23:55:46.922056 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:55:46.923140 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt build', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:55:47.074126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '14266b74-5242-4cb2-92df-5d34226281c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4800F7890>]}
+[0m23:55:47.105551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '14266b74-5242-4cb2-92df-5d34226281c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4B7E2D550>]}
+[0m23:55:47.105551 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:55:47.235358 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m23:55:47.235358 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:55:47.235358 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '14266b74-5242-4cb2-92df-5d34226281c4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4BC6D9B50>]}
+[0m23:55:47.852191 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.healthcare_dbt.int_final' (models\intermediate\int_final.sql) depends on a node named 'sample' which was not found
+[0m23:55:47.852191 [debug] [MainThread]: Command `dbt build` failed at 23:55:47.852191 after 1.00 seconds
+[0m23:55:47.852191 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4BB404090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4B4B0EB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E4B4B0EAD0>]}
+[0m23:55:47.852191 [debug] [MainThread]: Flushing usage events
+[0m23:55:49.360501 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:57:08.413467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAB21569D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAB31868D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAB31863D0>]}
+
+
+============================== 23:57:08.413467 | ff87f64f-d165-4d83-a605-b14cd4dbca1c ==============================
+[0m23:57:08.413467 [info ] [MainThread]: Running with dbt=1.11.7
+[0m23:57:08.413467 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt build', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m23:57:08.570033 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAB318D050>]}
+[0m23:57:08.609817 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAAE8ADD50>]}
+[0m23:57:08.611822 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m23:57:08.738271 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m23:57:08.738271 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m23:57:08.738271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA802094D0>]}
+[0m23:57:09.617661 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAB1099550>]}
+[0m23:57:09.665342 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\manifest.json
+[0m23:57:09.681529 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\semantic_manifest.json
+[0m23:57:09.714017 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA80923650>]}
+[0m23:57:09.714017 [info ] [MainThread]: Found 7 models, 5 seeds, 474 macros
+[0m23:57:09.728801 [info ] [MainThread]: 
+[0m23:57:09.728801 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m23:57:09.728801 [info ] [MainThread]: 
+[0m23:57:09.728801 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m23:57:09.734222 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_healthcare_lab'
+[0m23:57:12.656958 [debug] [ThreadPool]: Using duckdb connection "list_healthcare_lab"
+[0m23:57:12.656958 [debug] [ThreadPool]: On list_healthcare_lab: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "list_healthcare_lab"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"healthcare_lab"'
+    
+  
+  
+[0m23:57:12.665704 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:57:12.692263 [debug] [ThreadPool]: SQL status: OK in 0.026 seconds
+[0m23:57:12.693362 [debug] [ThreadPool]: On list_healthcare_lab: Close
+[0m23:57:12.693362 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare_lab, now create_healthcare_lab_main)
+[0m23:57:12.694580 [debug] [ThreadPool]: Creating schema "database: "healthcare_lab"
+schema: "main"
+"
+[0m23:57:12.698595 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m23:57:12.698595 [debug] [ThreadPool]: On create_healthcare_lab_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "create_healthcare_lab_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='healthcare_lab'
+        and type='sqlite'
+    
+  
+[0m23:57:12.699597 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m23:57:12.700446 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:57:12.701793 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m23:57:12.701793 [debug] [ThreadPool]: On create_healthcare_lab_main: BEGIN
+[0m23:57:12.701793 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:57:12.702874 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m23:57:12.703286 [debug] [ThreadPool]: On create_healthcare_lab_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "create_healthcare_lab_main"} */
+
+    
+    
+        create schema if not exists "healthcare_lab"."main"
+    
+[0m23:57:12.704296 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m23:57:12.705315 [debug] [ThreadPool]: On create_healthcare_lab_main: COMMIT
+[0m23:57:12.705315 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m23:57:12.705315 [debug] [ThreadPool]: On create_healthcare_lab_main: COMMIT
+[0m23:57:12.705315 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:57:12.705315 [debug] [ThreadPool]: On create_healthcare_lab_main: Close
+[0m23:57:12.707782 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_healthcare_lab_main'
+[0m23:57:12.711781 [debug] [ThreadPool]: Using duckdb connection "list_healthcare_lab_main"
+[0m23:57:12.711781 [debug] [ThreadPool]: On list_healthcare_lab_main: BEGIN
+[0m23:57:12.711781 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m23:57:12.711781 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m23:57:12.711781 [debug] [ThreadPool]: Using duckdb connection "list_healthcare_lab_main"
+[0m23:57:12.713883 [debug] [ThreadPool]: On list_healthcare_lab_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "list_healthcare_lab_main"} */
+select
+      'healthcare_lab' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'healthcare_lab'
+  
+[0m23:57:12.718793 [debug] [ThreadPool]: SQL status: OK in 0.005 seconds
+[0m23:57:12.718793 [debug] [ThreadPool]: On list_healthcare_lab_main: ROLLBACK
+[0m23:57:12.735147 [debug] [ThreadPool]: Failed to rollback 'list_healthcare_lab_main'
+[0m23:57:12.735147 [debug] [ThreadPool]: On list_healthcare_lab_main: Close
+[0m23:57:12.735147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAB3186910>]}
+[0m23:57:12.735147 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:12.735147 [debug] [MainThread]: On master: BEGIN
+[0m23:57:12.735147 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m23:57:12.735147 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:57:12.735147 [debug] [MainThread]: On master: COMMIT
+[0m23:57:12.741056 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:12.741056 [debug] [MainThread]: On master: COMMIT
+[0m23:57:12.741740 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:57:12.741740 [debug] [MainThread]: On master: Close
+[0m23:57:12.743873 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.item
+[0m23:57:12.743873 [info ] [Thread-1 (]: 1 of 12 START seed file main.item .............................................. [RUN]
+[0m23:57:12.743873 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.healthcare_dbt.item'
+[0m23:57:12.743873 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.item
+[0m23:57:12.743873 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.item
+[0m23:57:12.845768 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m23:57:12.845768 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: BEGIN
+[0m23:57:12.847774 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m23:57:12.847774 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:12.847774 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m23:57:12.847774 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.item"} */
+
+    create table "healthcare_lab"."main"."item" ("lot_number" text,"item_description" text)
+  
+[0m23:57:12.851820 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:57:12.854692 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m23:57:12.854692 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: 
+          COPY "healthcare_lab"."main"."item" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\item.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:57:12.882753 [debug] [Thread-1 (]: SQL status: OK in 0.023 seconds
+[0m23:57:12.886669 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.item"
+[0m23:57:12.896836 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: COMMIT
+[0m23:57:12.897832 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m23:57:12.897832 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: COMMIT
+[0m23:57:12.902709 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m23:57:12.903780 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: Close
+[0m23:57:12.906141 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA80DAB110>]}
+[0m23:57:12.907148 [info ] [Thread-1 (]: 1 of 12 OK loaded seed file main.item .......................................... [[32mINSERT 20000[0m in 0.16s]
+[0m23:57:12.907470 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.item
+[0m23:57:12.907470 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.lot
+[0m23:57:12.908501 [info ] [Thread-1 (]: 2 of 12 START seed file main.lot ............................................... [RUN]
+[0m23:57:12.908501 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.item, now seed.healthcare_dbt.lot)
+[0m23:57:12.909501 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.lot
+[0m23:57:12.909501 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.lot
+[0m23:57:12.984276 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m23:57:12.984276 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: BEGIN
+[0m23:57:12.985252 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:12.985252 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:12.985252 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m23:57:12.986269 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.lot"} */
+
+    create table "healthcare_lab"."main"."lot" ("lot_name" text)
+  
+[0m23:57:12.986269 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:12.987252 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m23:57:12.987252 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: 
+          COPY "healthcare_lab"."main"."lot" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\lot.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:57:12.993198 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m23:57:12.994761 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.lot"
+[0m23:57:12.996648 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: COMMIT
+[0m23:57:12.997014 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m23:57:12.997014 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: COMMIT
+[0m23:57:12.997014 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:57:13.001872 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: Close
+[0m23:57:13.001872 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA80E013D0>]}
+[0m23:57:13.002878 [info ] [Thread-1 (]: 2 of 12 OK loaded seed file main.lot ........................................... [[32mINSERT 20000[0m in 0.09s]
+[0m23:57:13.003881 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.lot
+[0m23:57:13.003881 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.result
+[0m23:57:13.004887 [info ] [Thread-1 (]: 3 of 12 START seed file main.result ............................................ [RUN]
+[0m23:57:13.004887 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.lot, now seed.healthcare_dbt.result)
+[0m23:57:13.005602 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.result
+[0m23:57:13.005602 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.result
+[0m23:57:13.282459 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m23:57:13.282459 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: BEGIN
+[0m23:57:13.282459 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:13.282459 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:13.282459 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m23:57:13.282459 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.result"} */
+
+    create table "healthcare_lab"."main"."result" ("sample_number" integer,"test_number" integer,"name" text,"entry" float8,"units" text,"status" text)
+  
+[0m23:57:13.282459 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:57:13.282459 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m23:57:13.282459 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: 
+          COPY "healthcare_lab"."main"."result" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\result.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:57:13.311854 [debug] [Thread-1 (]: SQL status: OK in 0.025 seconds
+[0m23:57:13.311854 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.result"
+[0m23:57:13.311854 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: COMMIT
+[0m23:57:13.311854 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m23:57:13.311854 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: COMMIT
+[0m23:57:13.319846 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:57:13.321853 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: Close
+[0m23:57:13.322688 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA80E02ED0>]}
+[0m23:57:13.322688 [info ] [Thread-1 (]: 3 of 12 OK loaded seed file main.result ........................................ [[32mINSERT 20000[0m in 0.32s]
+[0m23:57:13.322688 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.result
+[0m23:57:13.322688 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.sample
+[0m23:57:13.322688 [info ] [Thread-1 (]: 4 of 12 START seed file main.sample ............................................ [RUN]
+[0m23:57:13.322688 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.result, now seed.healthcare_dbt.sample)
+[0m23:57:13.322688 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.sample
+[0m23:57:13.322688 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.sample
+[0m23:57:13.693623 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m23:57:13.693623 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: BEGIN
+[0m23:57:13.693623 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:13.693623 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:13.693623 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m23:57:13.693623 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.sample"} */
+
+    create table "healthcare_lab"."main"."sample" ("label_id" text,"sample_number" integer,"date_completed" date,"product" text,"product_grade" text,"stage" text)
+  
+[0m23:57:13.693623 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:13.693623 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m23:57:13.693623 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: 
+          COPY "healthcare_lab"."main"."sample" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\sample.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:57:13.735857 [debug] [Thread-1 (]: SQL status: OK in 0.037 seconds
+[0m23:57:13.736857 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.sample"
+[0m23:57:13.738858 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: COMMIT
+[0m23:57:13.738858 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m23:57:13.738858 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: COMMIT
+[0m23:57:13.744561 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m23:57:13.744561 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: Close
+[0m23:57:13.745720 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA820C4610>]}
+[0m23:57:13.745720 [info ] [Thread-1 (]: 4 of 12 OK loaded seed file main.sample ........................................ [[32mINSERT 20000[0m in 0.42s]
+[0m23:57:13.746723 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.sample
+[0m23:57:13.747619 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.test
+[0m23:57:13.747619 [info ] [Thread-1 (]: 5 of 12 START seed file main.test .............................................. [RUN]
+[0m23:57:13.748662 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.sample, now seed.healthcare_dbt.test)
+[0m23:57:13.748662 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.test
+[0m23:57:13.748662 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.test
+[0m23:57:14.164023 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m23:57:14.171974 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: BEGIN
+[0m23:57:14.172912 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.172912 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.174536 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m23:57:14.174536 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.test"} */
+
+    create table "healthcare_lab"."main"."test" ("sample_number" integer,"test_number" integer,"reported_name" text,"status" text,"date_completed" date,"x_method" text)
+  
+[0m23:57:14.174536 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.174536 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m23:57:14.174536 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: 
+          COPY "healthcare_lab"."main"."test" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\test.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m23:57:14.208207 [debug] [Thread-1 (]: SQL status: OK in 0.032 seconds
+[0m23:57:14.210227 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.test"
+[0m23:57:14.211859 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: COMMIT
+[0m23:57:14.211859 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m23:57:14.212920 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: COMMIT
+[0m23:57:14.213469 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m23:57:14.213469 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: Close
+[0m23:57:14.213469 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA820CDE10>]}
+[0m23:57:14.219623 [info ] [Thread-1 (]: 5 of 12 OK loaded seed file main.test .......................................... [[32mINSERT 20000[0m in 0.46s]
+[0m23:57:14.219623 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.test
+[0m23:57:14.219623 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_item
+[0m23:57:14.219623 [info ] [Thread-1 (]: 6 of 12 START sql view model main.stg_item ..................................... [RUN]
+[0m23:57:14.221628 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.test, now model.healthcare_dbt.stg_item)
+[0m23:57:14.222014 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_item
+[0m23:57:14.225264 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_item"
+[0m23:57:14.225264 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_item
+[0m23:57:14.247642 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_item"
+[0m23:57:14.249648 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m23:57:14.249648 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: BEGIN
+[0m23:57:14.249648 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.252023 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.252023 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m23:57:14.252023 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_item"} */
+
+  
+  create view "healthcare_lab"."main"."stg_item__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."item"
+  );
+
+[0m23:57:14.253030 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.255423 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m23:57:14.255423 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_item"} */
+alter view "healthcare_lab"."main"."stg_item__dbt_tmp" rename to "stg_item"
+[0m23:57:14.255423 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.255423 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: COMMIT
+[0m23:57:14.255423 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m23:57:14.255423 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: COMMIT
+[0m23:57:14.263419 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:57:14.263419 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m23:57:14.263419 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_item"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_item__dbt_backup" cascade
+    
+[0m23:57:14.263419 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.263419 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: Close
+[0m23:57:14.263419 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA81E21710>]}
+[0m23:57:14.271909 [info ] [Thread-1 (]: 6 of 12 OK created sql view model main.stg_item ................................ [[32mOK[0m in 0.04s]
+[0m23:57:14.272213 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_item
+[0m23:57:14.272213 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_lot
+[0m23:57:14.272213 [info ] [Thread-1 (]: 7 of 12 START sql view model main.stg_lot ...................................... [RUN]
+[0m23:57:14.272213 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_item, now model.healthcare_dbt.stg_lot)
+[0m23:57:14.272213 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_lot
+[0m23:57:14.272213 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_lot"
+[0m23:57:14.272213 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_lot
+[0m23:57:14.272213 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_lot"
+[0m23:57:14.272213 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m23:57:14.272213 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: BEGIN
+[0m23:57:14.272213 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.281815 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.282365 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m23:57:14.282365 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_lot"} */
+
+  
+  create view "healthcare_lab"."main"."stg_lot__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."lot"
+  );
+
+[0m23:57:14.282365 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.282365 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m23:57:14.282365 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_lot"} */
+alter view "healthcare_lab"."main"."stg_lot__dbt_tmp" rename to "stg_lot"
+[0m23:57:14.282365 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.282365 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: COMMIT
+[0m23:57:14.282365 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m23:57:14.282365 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: COMMIT
+[0m23:57:14.282365 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.292983 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m23:57:14.292983 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_lot"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_lot__dbt_backup" cascade
+    
+[0m23:57:14.293829 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.293829 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: Close
+[0m23:57:14.293829 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA81F01CD0>]}
+[0m23:57:14.293829 [info ] [Thread-1 (]: 7 of 12 OK created sql view model main.stg_lot ................................. [[32mOK[0m in 0.02s]
+[0m23:57:14.293829 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_lot
+[0m23:57:14.293829 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_result
+[0m23:57:14.293829 [info ] [Thread-1 (]: 8 of 12 START sql view model main.stg_result ................................... [RUN]
+[0m23:57:14.293829 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_lot, now model.healthcare_dbt.stg_result)
+[0m23:57:14.293829 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_result
+[0m23:57:14.293829 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_result"
+[0m23:57:14.301808 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_result
+[0m23:57:14.304861 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_result"
+[0m23:57:14.305434 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m23:57:14.305434 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: BEGIN
+[0m23:57:14.305434 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.305434 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.305434 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m23:57:14.305434 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_result"} */
+
+  
+  create view "healthcare_lab"."main"."stg_result__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."result"
+  );
+
+[0m23:57:14.305434 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.311902 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m23:57:14.311902 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_result"} */
+alter view "healthcare_lab"."main"."stg_result__dbt_tmp" rename to "stg_result"
+[0m23:57:14.313341 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.313341 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: COMMIT
+[0m23:57:14.313341 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m23:57:14.313341 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: COMMIT
+[0m23:57:14.313341 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.313341 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m23:57:14.313341 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_result"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_result__dbt_backup" cascade
+    
+[0m23:57:14.313341 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.313341 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: Close
+[0m23:57:14.313341 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA822BE810>]}
+[0m23:57:14.321725 [info ] [Thread-1 (]: 8 of 12 OK created sql view model main.stg_result .............................. [[32mOK[0m in 0.02s]
+[0m23:57:14.321725 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_result
+[0m23:57:14.321725 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_sample
+[0m23:57:14.321725 [info ] [Thread-1 (]: 9 of 12 START sql view model main.stg_sample ................................... [RUN]
+[0m23:57:14.324298 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_result, now model.healthcare_dbt.stg_sample)
+[0m23:57:14.324696 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_sample
+[0m23:57:14.324696 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_sample"
+[0m23:57:14.324696 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_sample
+[0m23:57:14.331747 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_sample"
+[0m23:57:14.332753 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m23:57:14.332753 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: BEGIN
+[0m23:57:14.333753 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.333753 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.334753 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m23:57:14.334753 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_sample"} */
+
+  
+  create view "healthcare_lab"."main"."stg_sample__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."sample"
+  );
+
+[0m23:57:14.335505 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.335505 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m23:57:14.335505 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_sample"} */
+alter view "healthcare_lab"."main"."stg_sample__dbt_tmp" rename to "stg_sample"
+[0m23:57:14.335505 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.335505 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: COMMIT
+[0m23:57:14.335505 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m23:57:14.341769 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: COMMIT
+[0m23:57:14.342776 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.344798 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m23:57:14.344798 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_sample"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_sample__dbt_backup" cascade
+    
+[0m23:57:14.345775 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.345775 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: Close
+[0m23:57:14.345775 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA804453D0>]}
+[0m23:57:14.345775 [info ] [Thread-1 (]: 9 of 12 OK created sql view model main.stg_sample .............................. [[32mOK[0m in 0.02s]
+[0m23:57:14.345775 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_sample
+[0m23:57:14.345775 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.int_final
+[0m23:57:14.345775 [info ] [Thread-1 (]: 10 of 12 START sql view model main.int_final ................................... [RUN]
+[0m23:57:14.345775 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_sample, now model.healthcare_dbt.int_final)
+[0m23:57:14.345775 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.int_final
+[0m23:57:14.352716 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.int_final"
+[0m23:57:14.352716 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.int_final
+[0m23:57:14.352716 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.int_final"
+[0m23:57:14.352716 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m23:57:14.352716 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: BEGIN
+[0m23:57:14.352716 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.352716 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.361900 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m23:57:14.361900 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.int_final"} */
+
+  
+  create view "healthcare_lab"."main"."int_final__dbt_tmp" as (
+    
+
+WITH base AS (
+
+    SELECT
+        LEFT(A.label_id, 11) AS lot,
+        LEFT(A.label_id, 10) AS join_id,
+        'tall' AS site,
+        'mall' AS category,
+
+        A.date_completed,
+        A.product,
+        A.product_grade,
+        A.stage,
+        A.sample_number,
+
+        E.name AS parameter,
+        E.entry AS result_value,
+        E.units,
+
+        F.item_description AS lot_description,
+
+        B.sample_number AS test_sample_number,
+        B.reported_name,
+        B.test_number,
+        B.status AS test_status,
+        B.date_completed AS result_captured_date,
+        B.x_method
+
+    FROM "healthcare_lab"."main"."sample" A
+
+    LEFT JOIN "healthcare_lab"."main"."result" E 
+        ON A.sample_number = E.sample_number
+
+    LEFT JOIN "healthcare_lab"."main"."test" B 
+        ON E.test_number = B.test_number
+
+    LEFT JOIN "healthcare_lab"."main"."lot" C 
+        ON C.lot_name = LEFT(A.label_id, 11)
+
+    LEFT JOIN "healthcare_lab"."main"."item" F 
+        ON F.lot_number = C.lot_name
+
+    WHERE E.name IS NOT NULL
+      AND E.status = 'A'
+      AND B.status = 'A'
+      AND E.entry IS NOT NULL
+),
+
+latest AS (
+
+    SELECT *,
+        ROW_NUMBER() OVER (
+            PARTITION BY lot
+            ORDER BY result_captured_date DESC
+        ) AS rnk
+    FROM base
+)
+
+SELECT *
+FROM latest
+WHERE rnk = 1
+  );
+
+[0m23:57:14.362808 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m23:57:14.362808 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m23:57:14.362808 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.int_final"} */
+alter view "healthcare_lab"."main"."int_final__dbt_tmp" rename to "int_final"
+[0m23:57:14.362808 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.362808 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: COMMIT
+[0m23:57:14.362808 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m23:57:14.362808 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: COMMIT
+[0m23:57:14.371765 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.373770 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m23:57:14.373770 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.int_final"} */
+
+      drop view if exists "healthcare_lab"."main"."int_final__dbt_backup" cascade
+    
+[0m23:57:14.374769 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.375546 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: Close
+[0m23:57:14.375546 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA82236190>]}
+[0m23:57:14.375546 [info ] [Thread-1 (]: 10 of 12 OK created sql view model main.int_final .............................. [[32mOK[0m in 0.03s]
+[0m23:57:14.375546 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.int_final
+[0m23:57:14.375546 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_test
+[0m23:57:14.375546 [info ] [Thread-1 (]: 11 of 12 START sql view model main.stg_test .................................... [RUN]
+[0m23:57:14.375546 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.int_final, now model.healthcare_dbt.stg_test)
+[0m23:57:14.375546 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_test
+[0m23:57:14.381933 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_test"
+[0m23:57:14.382938 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_test
+[0m23:57:14.382938 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_test"
+[0m23:57:14.382938 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m23:57:14.382938 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: BEGIN
+[0m23:57:14.382938 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.382938 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.382938 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m23:57:14.390336 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_test"} */
+
+  
+  create view "healthcare_lab"."main"."stg_test__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."test"
+  );
+
+[0m23:57:14.390336 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.393018 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m23:57:14.394029 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_test"} */
+alter view "healthcare_lab"."main"."stg_test__dbt_tmp" rename to "stg_test"
+[0m23:57:14.394029 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.395017 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: COMMIT
+[0m23:57:14.395017 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m23:57:14.395017 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: COMMIT
+[0m23:57:14.395017 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.395017 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m23:57:14.395017 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_test"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_test__dbt_backup" cascade
+    
+[0m23:57:14.395017 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.401750 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: Close
+[0m23:57:14.402837 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA804A6710>]}
+[0m23:57:14.402837 [info ] [Thread-1 (]: 11 of 12 OK created sql view model main.stg_test ............................... [[32mOK[0m in 0.03s]
+[0m23:57:14.402837 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_test
+[0m23:57:14.402837 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.fact_results
+[0m23:57:14.402837 [info ] [Thread-1 (]: 12 of 12 START sql table model main.fact_results ............................... [RUN]
+[0m23:57:14.402837 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_test, now model.healthcare_dbt.fact_results)
+[0m23:57:14.402837 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.fact_results
+[0m23:57:14.402837 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.fact_results"
+[0m23:57:14.402837 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.fact_results
+[0m23:57:14.421807 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.fact_results"
+[0m23:57:14.422890 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m23:57:14.422890 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: BEGIN
+[0m23:57:14.422890 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m23:57:14.423891 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m23:57:14.423891 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m23:57:14.424889 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.fact_results"} */
+
+  
+    
+    
+
+    create  table
+      "healthcare_lab"."main"."fact_results__dbt_tmp"
+  
+    as (
+      
+
+SELECT
+    product,
+    lot_description,
+    site,
+    join_id,
+    lot,
+    category,
+    result_value AS entry,
+    units,
+    result_captured_date,
+
+    CURRENT_TIMESTAMP AS edl_inrt_dttm,
+    CURRENT_TIMESTAMP AS edl_last_modf_dttm
+
+FROM "healthcare_lab"."main"."int_final"
+    );
+  
+  
+[0m23:57:14.462779 [debug] [Thread-1 (]: SQL status: OK in 0.043 seconds
+[0m23:57:14.472477 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m23:57:14.472477 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.fact_results"} */
+alter table "healthcare_lab"."main"."fact_results__dbt_tmp" rename to "fact_results"
+[0m23:57:14.472477 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m23:57:14.472477 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: COMMIT
+[0m23:57:14.472477 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m23:57:14.472477 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: COMMIT
+[0m23:57:14.483786 [debug] [Thread-1 (]: SQL status: OK in 0.008 seconds
+[0m23:57:14.483786 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m23:57:14.483786 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.fact_results"} */
+
+      drop table if exists "healthcare_lab"."main"."fact_results__dbt_backup" cascade
+    
+[0m23:57:14.483786 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m23:57:14.483786 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: Close
+[0m23:57:14.483786 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ff87f64f-d165-4d83-a605-b14cd4dbca1c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA81EFCD90>]}
+[0m23:57:14.483786 [info ] [Thread-1 (]: 12 of 12 OK created sql table model main.fact_results .......................... [[32mOK[0m in 0.08s]
+[0m23:57:14.483786 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.fact_results
+[0m23:57:14.491936 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:14.492779 [debug] [MainThread]: On master: BEGIN
+[0m23:57:14.492779 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m23:57:14.492779 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m23:57:14.492779 [debug] [MainThread]: On master: COMMIT
+[0m23:57:14.492779 [debug] [MainThread]: Using duckdb connection "master"
+[0m23:57:14.492779 [debug] [MainThread]: On master: COMMIT
+[0m23:57:14.495311 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m23:57:14.495311 [debug] [MainThread]: On master: Close
+[0m23:57:14.495311 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m23:57:14.495311 [debug] [MainThread]: Connection 'create_healthcare_lab_main' was properly closed.
+[0m23:57:14.495311 [debug] [MainThread]: Connection 'list_healthcare_lab_main' was properly closed.
+[0m23:57:14.495311 [debug] [MainThread]: Connection 'model.healthcare_dbt.fact_results' was properly closed.
+[0m23:57:14.495311 [info ] [MainThread]: 
+[0m23:57:14.495311 [info ] [MainThread]: Finished running 5 seeds, 1 table model, 6 view models in 0 hours 0 minutes and 4.77 seconds (4.77s).
+[0m23:57:14.495311 [debug] [MainThread]: Command end result
+[0m23:57:14.513763 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\manifest.json
+[0m23:57:14.513763 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\semantic_manifest.json
+[0m23:57:14.513763 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\run_results.json
+[0m23:57:14.521734 [info ] [MainThread]: 
+[0m23:57:14.522826 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m23:57:14.523373 [info ] [MainThread]: 
+[0m23:57:14.523373 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
+[0m23:57:14.523373 [debug] [MainThread]: Command `dbt build` succeeded at 23:57:14.523373 after 6.16 seconds
+[0m23:57:14.523373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BA804A75D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAAB61F2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002BAAB61F390>]}
+[0m23:57:14.523373 [debug] [MainThread]: Flushing usage events
+[0m23:57:16.282745 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:10:44.645239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDF35E1D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDF35E3210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDF35E1E10>]}
+
+
+============================== 00:10:44.645239 | 13852a8d-2fe2-4c96-8d57-35050f6d784e ==============================
+[0m00:10:44.645239 [info ] [MainThread]: Running with dbt=1.11.7
+[0m00:10:44.645239 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt clean', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m00:10:44.718728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '13852a8d-2fe2-4c96-8d57-35050f6d784e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDF368A650>]}
+[0m00:10:44.756667 [debug] [MainThread]: Command `dbt clean` succeeded at 00:10:44.756115 after 0.18 seconds
+[0m00:10:44.756991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDF25B1B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDF2354590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002DDEB9CDE10>]}
+[0m00:10:44.756991 [debug] [MainThread]: Flushing usage events
+[0m00:10:46.507411 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m00:10:54.442709 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231CCA76CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231CCA76750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231CCA77E90>]}
+
+
+============================== 00:10:54.442709 | bc7245b1-7a50-412c-91b2-b1360feb281c ==============================
+[0m00:10:54.442709 [info ] [MainThread]: Running with dbt=1.11.7
+[0m00:10:54.442709 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Sameer Abdi\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt build', 'use_experimental_parser': 'False', 'log_path': 'C:\\Users\\Sameer Abdi\\Desktop\\dbt_migration_project\\logs'}
+[0m00:10:54.611405 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231CC8145D0>]}
+[0m00:10:54.656857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231C91BC610>]}
+[0m00:10:54.659621 [info ] [MainThread]: Registered adapter: duckdb=1.10.1
+[0m00:10:54.804807 [debug] [MainThread]: checksum: b80718358155fc17c3559352095564dd56ada1cc1a1c0ef2e62c857e71583775, vars: {}, profile: , target: , version: 1.11.7
+[0m00:10:54.805807 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m00:10:54.805807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231CDAE8F10>]}
+[0m00:10:55.614020 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023180445A50>]}
+[0m00:10:55.653329 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\manifest.json
+[0m00:10:55.663238 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\semantic_manifest.json
+[0m00:10:55.693084 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231809271D0>]}
+[0m00:10:55.693084 [info ] [MainThread]: Found 7 models, 5 seeds, 474 macros
+[0m00:10:55.693084 [info ] [MainThread]: 
+[0m00:10:55.693084 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m00:10:55.693084 [info ] [MainThread]: 
+[0m00:10:55.693084 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m00:10:55.700795 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_healthcare_lab'
+[0m00:10:55.743694 [debug] [ThreadPool]: Using duckdb connection "list_healthcare_lab"
+[0m00:10:55.743694 [debug] [ThreadPool]: On list_healthcare_lab: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "list_healthcare_lab"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"healthcare_lab"'
+    
+  
+  
+[0m00:10:55.743694 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.753344 [debug] [ThreadPool]: SQL status: OK in 0.013 seconds
+[0m00:10:55.753344 [debug] [ThreadPool]: On list_healthcare_lab: Close
+[0m00:10:55.753344 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_healthcare_lab, now create_healthcare_lab_main)
+[0m00:10:55.763332 [debug] [ThreadPool]: Creating schema "database: "healthcare_lab"
+schema: "main"
+"
+[0m00:10:55.765283 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m00:10:55.765283 [debug] [ThreadPool]: On create_healthcare_lab_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "create_healthcare_lab_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='healthcare_lab'
+        and type='sqlite'
+    
+  
+[0m00:10:55.765283 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m00:10:55.765283 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m00:10:55.765283 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m00:10:55.765283 [debug] [ThreadPool]: On create_healthcare_lab_main: BEGIN
+[0m00:10:55.765283 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m00:10:55.765283 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m00:10:55.771670 [debug] [ThreadPool]: On create_healthcare_lab_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "create_healthcare_lab_main"} */
+
+    
+    
+        create schema if not exists "healthcare_lab"."main"
+    
+[0m00:10:55.771670 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m00:10:55.772695 [debug] [ThreadPool]: On create_healthcare_lab_main: COMMIT
+[0m00:10:55.772695 [debug] [ThreadPool]: Using duckdb connection "create_healthcare_lab_main"
+[0m00:10:55.773807 [debug] [ThreadPool]: On create_healthcare_lab_main: COMMIT
+[0m00:10:55.773807 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m00:10:55.773807 [debug] [ThreadPool]: On create_healthcare_lab_main: Close
+[0m00:10:55.775846 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_healthcare_lab_main'
+[0m00:10:55.779805 [debug] [ThreadPool]: Using duckdb connection "list_healthcare_lab_main"
+[0m00:10:55.779805 [debug] [ThreadPool]: On list_healthcare_lab_main: BEGIN
+[0m00:10:55.779805 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m00:10:55.780822 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m00:10:55.780822 [debug] [ThreadPool]: Using duckdb connection "list_healthcare_lab_main"
+[0m00:10:55.780822 [debug] [ThreadPool]: On list_healthcare_lab_main: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "connection_name": "list_healthcare_lab_main"} */
+select
+      'healthcare_lab' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'healthcare_lab'
+  
+[0m00:10:55.783208 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m00:10:55.784228 [debug] [ThreadPool]: On list_healthcare_lab_main: ROLLBACK
+[0m00:10:55.785228 [debug] [ThreadPool]: Failed to rollback 'list_healthcare_lab_main'
+[0m00:10:55.785228 [debug] [ThreadPool]: On list_healthcare_lab_main: Close
+[0m00:10:55.786229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002318074A510>]}
+[0m00:10:55.786229 [debug] [MainThread]: Using duckdb connection "master"
+[0m00:10:55.787231 [debug] [MainThread]: On master: BEGIN
+[0m00:10:55.787231 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m00:10:55.787231 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m00:10:55.788231 [debug] [MainThread]: On master: COMMIT
+[0m00:10:55.788231 [debug] [MainThread]: Using duckdb connection "master"
+[0m00:10:55.789231 [debug] [MainThread]: On master: COMMIT
+[0m00:10:55.789231 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m00:10:55.789231 [debug] [MainThread]: On master: Close
+[0m00:10:55.792671 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.item
+[0m00:10:55.792671 [info ] [Thread-1 (]: 1 of 12 START seed file main.item .............................................. [RUN]
+[0m00:10:55.792671 [debug] [Thread-1 (]: Acquiring new duckdb connection 'seed.healthcare_dbt.item'
+[0m00:10:55.793813 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.item
+[0m00:10:55.793813 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.item
+[0m00:10:55.869238 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m00:10:55.869238 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: BEGIN
+[0m00:10:55.869238 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m00:10:55.869238 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:55.869238 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m00:10:55.869238 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.item"} */
+
+    create table "healthcare_lab"."main"."item" ("lot_number" text,"item_description" text)
+  
+[0m00:10:55.869238 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:55.869238 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m00:10:55.885251 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: 
+          COPY "healthcare_lab"."main"."item" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\item.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m00:10:55.894881 [debug] [Thread-1 (]: SQL status: OK in 0.010 seconds
+[0m00:10:55.894881 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.item"
+[0m00:10:55.901306 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: COMMIT
+[0m00:10:55.901306 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.item"
+[0m00:10:55.901306 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: COMMIT
+[0m00:10:55.914469 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m00:10:55.914469 [debug] [Thread-1 (]: On seed.healthcare_dbt.item: Close
+[0m00:10:55.918334 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023180D6C3D0>]}
+[0m00:10:55.918334 [info ] [Thread-1 (]: 1 of 12 OK loaded seed file main.item .......................................... [[32mINSERT 16000[0m in 0.12s]
+[0m00:10:55.918334 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.item
+[0m00:10:55.918334 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.lot
+[0m00:10:55.918334 [info ] [Thread-1 (]: 2 of 12 START seed file main.lot ............................................... [RUN]
+[0m00:10:55.918334 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.item, now seed.healthcare_dbt.lot)
+[0m00:10:55.918334 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.lot
+[0m00:10:55.918334 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.lot
+[0m00:10:55.935166 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m00:10:55.935166 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: BEGIN
+[0m00:10:55.935166 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:55.935166 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:55.935166 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m00:10:55.935166 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.lot"} */
+
+    create table "healthcare_lab"."main"."lot" ("lot_name" text)
+  
+[0m00:10:55.935166 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:55.943443 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m00:10:55.943443 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: 
+          COPY "healthcare_lab"."main"."lot" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\lot.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m00:10:55.943443 [debug] [Thread-1 (]: SQL status: OK in 0.004 seconds
+[0m00:10:55.943443 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.lot"
+[0m00:10:55.943443 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: COMMIT
+[0m00:10:55.943443 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.lot"
+[0m00:10:55.943443 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: COMMIT
+[0m00:10:55.953750 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m00:10:55.953750 [debug] [Thread-1 (]: On seed.healthcare_dbt.lot: Close
+[0m00:10:55.953750 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023180D9CCD0>]}
+[0m00:10:55.953750 [info ] [Thread-1 (]: 2 of 12 OK loaded seed file main.lot ........................................... [[32mINSERT 15000[0m in 0.04s]
+[0m00:10:55.953750 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.lot
+[0m00:10:55.953750 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.result
+[0m00:10:55.953750 [info ] [Thread-1 (]: 3 of 12 START seed file main.result ............................................ [RUN]
+[0m00:10:55.953750 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.lot, now seed.healthcare_dbt.result)
+[0m00:10:55.953750 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.result
+[0m00:10:55.953750 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.result
+[0m00:10:56.219999 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m00:10:56.219999 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: BEGIN
+[0m00:10:56.219999 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:56.221429 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:56.221429 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m00:10:56.221429 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.result"} */
+
+    create table "healthcare_lab"."main"."result" ("sample_number" integer,"test_number" integer,"name" text,"entry" float8,"units" text,"status" text)
+  
+[0m00:10:56.222436 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:56.223029 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m00:10:56.224109 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: 
+          COPY "healthcare_lab"."main"."result" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\result.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m00:10:56.244128 [debug] [Thread-1 (]: SQL status: OK in 0.020 seconds
+[0m00:10:56.244128 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.result"
+[0m00:10:56.246752 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: COMMIT
+[0m00:10:56.246752 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.result"
+[0m00:10:56.246752 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: COMMIT
+[0m00:10:56.251675 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m00:10:56.252955 [debug] [Thread-1 (]: On seed.healthcare_dbt.result: Close
+[0m00:10:56.252955 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023181F66410>]}
+[0m00:10:56.252955 [info ] [Thread-1 (]: 3 of 12 OK loaded seed file main.result ........................................ [[32mINSERT 17000[0m in 0.30s]
+[0m00:10:56.252955 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.result
+[0m00:10:56.252955 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.sample
+[0m00:10:56.252955 [info ] [Thread-1 (]: 4 of 12 START seed file main.sample ............................................ [RUN]
+[0m00:10:56.252955 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.result, now seed.healthcare_dbt.sample)
+[0m00:10:56.252955 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.sample
+[0m00:10:56.252955 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.sample
+[0m00:10:56.545897 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m00:10:56.545897 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: BEGIN
+[0m00:10:56.545897 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:56.545897 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:56.561801 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m00:10:56.561801 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.sample"} */
+
+    create table "healthcare_lab"."main"."sample" ("label_id" text,"sample_number" integer,"date_completed" date,"product" text,"product_grade" text,"stage" text)
+  
+[0m00:10:56.561801 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:56.561801 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m00:10:56.561801 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: 
+          COPY "healthcare_lab"."main"."sample" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\sample.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m00:10:56.587418 [debug] [Thread-1 (]: SQL status: OK in 0.027 seconds
+[0m00:10:56.587418 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.sample"
+[0m00:10:56.593440 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: COMMIT
+[0m00:10:56.593440 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.sample"
+[0m00:10:56.593440 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: COMMIT
+[0m00:10:56.593440 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m00:10:56.593440 [debug] [Thread-1 (]: On seed.healthcare_dbt.sample: Close
+[0m00:10:56.593440 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023181F8AF50>]}
+[0m00:10:56.593440 [info ] [Thread-1 (]: 4 of 12 OK loaded seed file main.sample ........................................ [[32mINSERT 18000[0m in 0.34s]
+[0m00:10:56.593440 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.sample
+[0m00:10:56.593440 [debug] [Thread-1 (]: Began running node seed.healthcare_dbt.test
+[0m00:10:56.593440 [info ] [Thread-1 (]: 5 of 12 START seed file main.test .............................................. [RUN]
+[0m00:10:56.593440 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.sample, now seed.healthcare_dbt.test)
+[0m00:10:56.593440 [debug] [Thread-1 (]: Began compiling node seed.healthcare_dbt.test
+[0m00:10:56.593440 [debug] [Thread-1 (]: Began executing node seed.healthcare_dbt.test
+[0m00:10:56.954624 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m00:10:56.954624 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: BEGIN
+[0m00:10:56.954624 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:56.954624 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:56.954624 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m00:10:56.956626 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "seed.healthcare_dbt.test"} */
+
+    create table "healthcare_lab"."main"."test" ("sample_number" integer,"test_number" integer,"reported_name" text,"status" text,"date_completed" date,"x_method" text)
+  
+[0m00:10:56.956626 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:56.956626 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m00:10:56.956626 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: 
+          COPY "healthcare_lab"."main"."test" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\test.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m00:10:56.989595 [debug] [Thread-1 (]: SQL status: OK in 0.036 seconds
+[0m00:10:56.995115 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.healthcare_dbt.test"
+[0m00:10:56.995115 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: COMMIT
+[0m00:10:56.995115 [debug] [Thread-1 (]: Using duckdb connection "seed.healthcare_dbt.test"
+[0m00:10:56.995115 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: COMMIT
+[0m00:10:56.995115 [debug] [Thread-1 (]: SQL status: OK in 0.005 seconds
+[0m00:10:56.995115 [debug] [Thread-1 (]: On seed.healthcare_dbt.test: Close
+[0m00:10:56.995115 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023181F69BD0>]}
+[0m00:10:56.995115 [info ] [Thread-1 (]: 5 of 12 OK loaded seed file main.test .......................................... [[32mINSERT 20000[0m in 0.40s]
+[0m00:10:56.995115 [debug] [Thread-1 (]: Finished running node seed.healthcare_dbt.test
+[0m00:10:56.995115 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_item
+[0m00:10:56.995115 [info ] [Thread-1 (]: 6 of 12 START sql view model main.stg_item ..................................... [RUN]
+[0m00:10:56.995115 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.healthcare_dbt.test, now model.healthcare_dbt.stg_item)
+[0m00:10:56.995115 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_item
+[0m00:10:57.014040 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_item"
+[0m00:10:57.014040 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_item
+[0m00:10:57.033458 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_item"
+[0m00:10:57.033458 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m00:10:57.033458 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: BEGIN
+[0m00:10:57.033458 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.033458 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.038082 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m00:10:57.038082 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_item"} */
+
+  
+  create view "healthcare_lab"."main"."stg_item__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."item"
+  );
+
+[0m00:10:57.038082 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.042835 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m00:10:57.043842 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_item"} */
+alter view "healthcare_lab"."main"."stg_item__dbt_tmp" rename to "stg_item"
+[0m00:10:57.043842 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.044841 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: COMMIT
+[0m00:10:57.045858 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m00:10:57.045858 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: COMMIT
+[0m00:10:57.047268 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.051289 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_item"
+[0m00:10:57.051289 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_item"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_item__dbt_backup" cascade
+    
+[0m00:10:57.052274 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.053025 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_item: Close
+[0m00:10:57.054070 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231820394D0>]}
+[0m00:10:57.054070 [info ] [Thread-1 (]: 6 of 12 OK created sql view model main.stg_item ................................ [[32mOK[0m in 0.06s]
+[0m00:10:57.055070 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_item
+[0m00:10:57.055070 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_lot
+[0m00:10:57.056069 [info ] [Thread-1 (]: 7 of 12 START sql view model main.stg_lot ...................................... [RUN]
+[0m00:10:57.056069 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_item, now model.healthcare_dbt.stg_lot)
+[0m00:10:57.056069 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_lot
+[0m00:10:57.058085 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_lot"
+[0m00:10:57.059069 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_lot
+[0m00:10:57.062071 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_lot"
+[0m00:10:57.063072 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m00:10:57.063072 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: BEGIN
+[0m00:10:57.063072 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.063072 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.063072 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m00:10:57.065480 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_lot"} */
+
+  
+  create view "healthcare_lab"."main"."stg_lot__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."lot"
+  );
+
+[0m00:10:57.065480 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.067487 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m00:10:57.067487 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_lot"} */
+alter view "healthcare_lab"."main"."stg_lot__dbt_tmp" rename to "stg_lot"
+[0m00:10:57.067487 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.069495 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: COMMIT
+[0m00:10:57.070293 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m00:10:57.070698 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: COMMIT
+[0m00:10:57.070698 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.073600 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_lot"
+[0m00:10:57.073600 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_lot"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_lot__dbt_backup" cascade
+    
+[0m00:10:57.073600 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.073600 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_lot: Close
+[0m00:10:57.073600 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023181E12D90>]}
+[0m00:10:57.073600 [info ] [Thread-1 (]: 7 of 12 OK created sql view model main.stg_lot ................................. [[32mOK[0m in 0.02s]
+[0m00:10:57.073600 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_lot
+[0m00:10:57.073600 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_result
+[0m00:10:57.073600 [info ] [Thread-1 (]: 8 of 12 START sql view model main.stg_result ................................... [RUN]
+[0m00:10:57.073600 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_lot, now model.healthcare_dbt.stg_result)
+[0m00:10:57.073600 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_result
+[0m00:10:57.073600 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_result"
+[0m00:10:57.073600 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_result
+[0m00:10:57.084050 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_result"
+[0m00:10:57.086245 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m00:10:57.086245 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: BEGIN
+[0m00:10:57.086245 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.088250 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.088250 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m00:10:57.088250 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_result"} */
+
+  
+  create view "healthcare_lab"."main"."stg_result__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."result"
+  );
+
+[0m00:10:57.088250 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.088250 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m00:10:57.088250 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_result"} */
+alter view "healthcare_lab"."main"."stg_result__dbt_tmp" rename to "stg_result"
+[0m00:10:57.092732 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.094192 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: COMMIT
+[0m00:10:57.094192 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m00:10:57.094192 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: COMMIT
+[0m00:10:57.094192 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.098188 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_result"
+[0m00:10:57.098188 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_result"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_result__dbt_backup" cascade
+    
+[0m00:10:57.098188 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.100196 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_result: Close
+[0m00:10:57.100196 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023181F59010>]}
+[0m00:10:57.100196 [info ] [Thread-1 (]: 8 of 12 OK created sql view model main.stg_result .............................. [[32mOK[0m in 0.03s]
+[0m00:10:57.100196 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_result
+[0m00:10:57.100196 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_sample
+[0m00:10:57.103272 [info ] [Thread-1 (]: 9 of 12 START sql view model main.stg_sample ................................... [RUN]
+[0m00:10:57.103990 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_result, now model.healthcare_dbt.stg_sample)
+[0m00:10:57.103990 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_sample
+[0m00:10:57.103990 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_sample"
+[0m00:10:57.103990 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_sample
+[0m00:10:57.103990 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_sample"
+[0m00:10:57.103990 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m00:10:57.103990 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: BEGIN
+[0m00:10:57.103990 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.103990 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.103990 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m00:10:57.103990 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_sample"} */
+
+  
+  create view "healthcare_lab"."main"."stg_sample__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."sample"
+  );
+
+[0m00:10:57.112897 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.113637 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m00:10:57.113637 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_sample"} */
+alter view "healthcare_lab"."main"."stg_sample__dbt_tmp" rename to "stg_sample"
+[0m00:10:57.116699 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.116699 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: COMMIT
+[0m00:10:57.116699 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m00:10:57.116699 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: COMMIT
+[0m00:10:57.116699 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.121096 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_sample"
+[0m00:10:57.122853 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_sample"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_sample__dbt_backup" cascade
+    
+[0m00:10:57.123861 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.123861 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_sample: Close
+[0m00:10:57.123861 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023182737A90>]}
+[0m00:10:57.123861 [info ] [Thread-1 (]: 9 of 12 OK created sql view model main.stg_sample .............................. [[32mOK[0m in 0.02s]
+[0m00:10:57.123861 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_sample
+[0m00:10:57.123861 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.int_final
+[0m00:10:57.123861 [info ] [Thread-1 (]: 10 of 12 START sql view model main.int_final ................................... [RUN]
+[0m00:10:57.123861 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_sample, now model.healthcare_dbt.int_final)
+[0m00:10:57.123861 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.int_final
+[0m00:10:57.123861 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.int_final"
+[0m00:10:57.123861 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.int_final
+[0m00:10:57.134035 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.int_final"
+[0m00:10:57.134035 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m00:10:57.134035 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: BEGIN
+[0m00:10:57.134035 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.134035 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.134035 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m00:10:57.134035 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.int_final"} */
+
+  
+  create view "healthcare_lab"."main"."int_final__dbt_tmp" as (
+    
+
+WITH base AS (
+
+    SELECT
+        LEFT(A.label_id, 11) AS lot,
+        LEFT(A.label_id, 10) AS join_id,
+        'tall' AS site,
+        'mall' AS category,
+
+        A.date_completed,
+        A.product,
+        A.product_grade,
+        A.stage,
+        A.sample_number,
+
+        E.name AS parameter,
+        E.entry AS result_value,
+        E.units,
+
+        F.item_description AS lot_description,
+
+        B.sample_number AS test_sample_number,
+        B.reported_name,
+        B.test_number,
+        B.status AS test_status,
+        B.date_completed AS result_captured_date,
+        B.x_method
+
+    FROM "healthcare_lab"."main"."sample" A
+
+    LEFT JOIN "healthcare_lab"."main"."result" E 
+        ON A.sample_number = E.sample_number
+
+    LEFT JOIN "healthcare_lab"."main"."test" B 
+        ON E.test_number = B.test_number
+
+    LEFT JOIN "healthcare_lab"."main"."lot" C 
+        ON C.lot_name = LEFT(A.label_id, 11)
+
+    LEFT JOIN "healthcare_lab"."main"."item" F 
+        ON F.lot_number = C.lot_name
+
+    WHERE E.name IS NOT NULL
+      AND E.status = 'A'
+      AND B.status = 'A'
+      AND E.entry IS NOT NULL
+),
+
+latest AS (
+
+    SELECT *,
+        ROW_NUMBER() OVER (
+            PARTITION BY lot
+            ORDER BY result_captured_date DESC
+        ) AS rnk
+    FROM base
+)
+
+SELECT *
+FROM latest
+WHERE rnk = 1
+  );
+
+[0m00:10:57.134035 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.134035 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m00:10:57.134035 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.int_final"} */
+alter view "healthcare_lab"."main"."int_final__dbt_tmp" rename to "int_final"
+[0m00:10:57.134035 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.143298 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: COMMIT
+[0m00:10:57.144304 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m00:10:57.144304 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: COMMIT
+[0m00:10:57.144304 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.144304 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.int_final"
+[0m00:10:57.144304 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.int_final"} */
+
+      drop view if exists "healthcare_lab"."main"."int_final__dbt_backup" cascade
+    
+[0m00:10:57.144304 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.144304 [debug] [Thread-1 (]: On model.healthcare_dbt.int_final: Close
+[0m00:10:57.144304 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023181F64310>]}
+[0m00:10:57.144304 [info ] [Thread-1 (]: 10 of 12 OK created sql view model main.int_final .............................. [[32mOK[0m in 0.02s]
+[0m00:10:57.144304 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.int_final
+[0m00:10:57.144304 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.stg_test
+[0m00:10:57.152725 [info ] [Thread-1 (]: 11 of 12 START sql view model main.stg_test .................................... [RUN]
+[0m00:10:57.153733 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.int_final, now model.healthcare_dbt.stg_test)
+[0m00:10:57.153733 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.stg_test
+[0m00:10:57.153733 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.stg_test"
+[0m00:10:57.153733 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.stg_test
+[0m00:10:57.153733 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.stg_test"
+[0m00:10:57.153733 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m00:10:57.153733 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: BEGIN
+[0m00:10:57.153733 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.153733 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.153733 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m00:10:57.163305 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_test"} */
+
+  
+  create view "healthcare_lab"."main"."stg_test__dbt_tmp" as (
+    SELECT *
+FROM "healthcare_lab"."main"."test"
+  );
+
+[0m00:10:57.163305 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.165615 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m00:10:57.166613 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_test"} */
+alter view "healthcare_lab"."main"."stg_test__dbt_tmp" rename to "stg_test"
+[0m00:10:57.166613 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.167597 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: COMMIT
+[0m00:10:57.168615 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m00:10:57.168615 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: COMMIT
+[0m00:10:57.170598 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m00:10:57.173221 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.stg_test"
+[0m00:10:57.174018 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.stg_test"} */
+
+      drop view if exists "healthcare_lab"."main"."stg_test__dbt_backup" cascade
+    
+[0m00:10:57.174018 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.174018 [debug] [Thread-1 (]: On model.healthcare_dbt.stg_test: Close
+[0m00:10:57.174018 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002318212B690>]}
+[0m00:10:57.174018 [info ] [Thread-1 (]: 11 of 12 OK created sql view model main.stg_test ............................... [[32mOK[0m in 0.02s]
+[0m00:10:57.174018 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.stg_test
+[0m00:10:57.174018 [debug] [Thread-1 (]: Began running node model.healthcare_dbt.fact_results
+[0m00:10:57.174018 [info ] [Thread-1 (]: 12 of 12 START sql table model main.fact_results ............................... [RUN]
+[0m00:10:57.174018 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.healthcare_dbt.stg_test, now model.healthcare_dbt.fact_results)
+[0m00:10:57.174018 [debug] [Thread-1 (]: Began compiling node model.healthcare_dbt.fact_results
+[0m00:10:57.174018 [debug] [Thread-1 (]: Writing injected SQL for node "model.healthcare_dbt.fact_results"
+[0m00:10:57.174018 [debug] [Thread-1 (]: Began executing node model.healthcare_dbt.fact_results
+[0m00:10:57.194325 [debug] [Thread-1 (]: Writing runtime sql for node "model.healthcare_dbt.fact_results"
+[0m00:10:57.194325 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m00:10:57.194325 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: BEGIN
+[0m00:10:57.194325 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m00:10:57.194325 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m00:10:57.201096 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m00:10:57.201096 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.fact_results"} */
+
+  
+    
+    
+
+    create  table
+      "healthcare_lab"."main"."fact_results__dbt_tmp"
+  
+    as (
+      
+
+SELECT
+    product,
+    lot_description,
+    site,
+    join_id,
+    lot,
+    category,
+    result_value AS entry,
+    units,
+    result_captured_date,
+
+    CURRENT_TIMESTAMP AS edl_inrt_dttm,
+    CURRENT_TIMESTAMP AS edl_last_modf_dttm
+
+FROM "healthcare_lab"."main"."int_final"
+    );
+  
+  
+[0m00:10:57.223281 [debug] [Thread-1 (]: SQL status: OK in 0.021 seconds
+[0m00:10:57.225301 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m00:10:57.225301 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.fact_results"} */
+alter table "healthcare_lab"."main"."fact_results__dbt_tmp" rename to "fact_results"
+[0m00:10:57.226302 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.227285 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: COMMIT
+[0m00:10:57.227285 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m00:10:57.228295 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: COMMIT
+[0m00:10:57.230285 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m00:10:57.232288 [debug] [Thread-1 (]: Using duckdb connection "model.healthcare_dbt.fact_results"
+[0m00:10:57.233222 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: /* {"app": "dbt", "dbt_version": "1.11.7", "profile_name": "healthcare_dbt", "target_name": "dev", "node_id": "model.healthcare_dbt.fact_results"} */
+
+      drop table if exists "healthcare_lab"."main"."fact_results__dbt_backup" cascade
+    
+[0m00:10:57.233222 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m00:10:57.234282 [debug] [Thread-1 (]: On model.healthcare_dbt.fact_results: Close
+[0m00:10:57.235256 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bc7245b1-7a50-412c-91b2-b1360feb281c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023182083810>]}
+[0m00:10:57.235256 [info ] [Thread-1 (]: 12 of 12 OK created sql table model main.fact_results .......................... [[32mOK[0m in 0.06s]
+[0m00:10:57.236003 [debug] [Thread-1 (]: Finished running node model.healthcare_dbt.fact_results
+[0m00:10:57.237019 [debug] [MainThread]: Using duckdb connection "master"
+[0m00:10:57.237019 [debug] [MainThread]: On master: BEGIN
+[0m00:10:57.237019 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m00:10:57.238018 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m00:10:57.238018 [debug] [MainThread]: On master: COMMIT
+[0m00:10:57.239017 [debug] [MainThread]: Using duckdb connection "master"
+[0m00:10:57.239017 [debug] [MainThread]: On master: COMMIT
+[0m00:10:57.239017 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m00:10:57.239017 [debug] [MainThread]: On master: Close
+[0m00:10:57.240034 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m00:10:57.240034 [debug] [MainThread]: Connection 'create_healthcare_lab_main' was properly closed.
+[0m00:10:57.240034 [debug] [MainThread]: Connection 'list_healthcare_lab_main' was properly closed.
+[0m00:10:57.241017 [debug] [MainThread]: Connection 'model.healthcare_dbt.fact_results' was properly closed.
+[0m00:10:57.241017 [info ] [MainThread]: 
+[0m00:10:57.241017 [info ] [MainThread]: Finished running 5 seeds, 1 table model, 6 view models in 0 hours 0 minutes and 1.55 seconds (1.55s).
+[0m00:10:57.243241 [debug] [MainThread]: Command end result
+[0m00:10:57.254324 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\manifest.json
+[0m00:10:57.254324 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\semantic_manifest.json
+[0m00:10:57.264524 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Sameer Abdi\Desktop\dbt_migration_project\target\run_results.json
+[0m00:10:57.264524 [info ] [MainThread]: 
+[0m00:10:57.264524 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m00:10:57.264524 [info ] [MainThread]: 
+[0m00:10:57.264524 [info ] [MainThread]: Done. PASS=12 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=12
+[0m00:10:57.264524 [debug] [MainThread]: Command `dbt build` succeeded at 00:10:57.264524 after 2.88 seconds
+[0m00:10:57.264524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231C5F6F390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231C5F6F2D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231C5EEDDD0>]}
+[0m00:10:57.264524 [debug] [MainThread]: Flushing usage events
+[0m00:10:59.096303 [debug] [MainThread]: An error was encountered while trying to flush usage events

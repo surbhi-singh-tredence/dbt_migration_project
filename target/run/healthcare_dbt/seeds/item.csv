@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "healthcare_lab"."main"."item" ("lot_number" text,"item_description" text)
+  ;
+    -- dbt seed --
+    
+          COPY "healthcare_lab"."main"."item" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\item.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  

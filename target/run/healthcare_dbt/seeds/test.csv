@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "healthcare_lab"."main"."test" ("sample_number" integer,"test_number" integer,"reported_name" text,"status" text,"date_completed" date,"x_method" text)
+  ;
+    -- dbt seed --
+    
+          COPY "healthcare_lab"."main"."test" FROM 'C:\Users\Sameer Abdi\Desktop\dbt_migration_project\seeds\test.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
