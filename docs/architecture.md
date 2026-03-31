@@ -188,6 +188,3 @@ dbt seed
 dbt run
 dbt test
 ```
-
-* I can upgrade this to **Star Schema (dim + fact like your doc)**
-* Or align fully with **Azure / Databricks architecture (manager level)** 🚀
